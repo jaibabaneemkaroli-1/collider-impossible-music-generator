@@ -7,60 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        
-        <!-- STATE 1: API GATE -->
-        <div id="api-gate" class="state active">
-            <div class="text-center mb-2">
-                <h1 class="glitch-text">🎪 Cultural Grammar Synthesis</h1>
-                <p>impossible music generator</p>
-            </div>
-            
-            <div class="mb-2">
-                <p>You'll need a Claude API key (free to start, ~$0.05 per generation)</p>
-            </div>
-            
-            <div class="mb-2">
-                <input 
-                    type="password" 
-                    id="api-key-input" 
-                    placeholder="sk-ant-api03-..."
-                    autocomplete="off">
-            </div>
-            
-            <div class="mb-2">
-                <label>
-                    <input type="checkbox" id="remember-key" checked>
-                    Remember this (localStorage only)
-                </label>
-            </div>
-            
-            <div class="text-center">
-                <button id="submit-api-key" class="primary">
-                    🎪 ENTER
-                </button>
-            </div>
-            
-            <div class="mt-2 text-center">
-                <p><small>Your key stays in your browser. We never see it.</small></p>
-                <p><small><a href="https://console.anthropic.com" target="_blank">Get API key →</a></small></p>
-            </div>
-        </div>
-        
-        <!-- STATE 2: INTENT SELECTION -->
-        <div id="intent-selection" class="state">
-            <div class="text-center mb-2">
-                <h1 class="glitch-text">Cultural Grammar Synthesis</h1>
-                <p>What do you want?</p>
-            </div>
-            
-            <div class="intent-grid">
-                <button class="intent" data-intent="laugh">
-                    🎉<br>LAUGH
-                </button>
-                <button class="intent" data-intent="banger">
-                    🔥<br>BANGER
-                </button>
                 <button class="intent" data-intent="seduce">
                     💕<br>SEDUCE
                 </button>
@@ -166,339 +112,36 @@
 // DATA: MINI MUSIC GENRES (20 for MVP)
 // ========================================
 
-const MINI_MUSIC_GENRES = [
-    {
-        name: "UK Drill",
-        category: "electronic_dance_modern",
-        bpm: [138, 142],
-        spectral: { bass: 0.95, center: 150 },
-        ceremonial: 0.0,
-        keywords: ["dark", "sliding 808s", "menacing"]
-    },
-    {
-        name: "Sacred Harp",
-        category: "religious_ceremonial",
-        bpm: [60, 80],
-        spectral: { bass: 0.3, center: 700 },
-        ceremonial: 0.9,
-        keywords: ["a cappella", "communal", "open fourths"]
-    },
-    {
-        name: "Jersey Club",
-        category: "electronic_dance_modern",
-        bpm: [135, 145],
-        spectral: { bass: 0.7, center: 2500 },
-        ceremonial: 0.0,
-        keywords: ["bed squeak", "rapid fire", "140 BPM"]
-    },
-    {
-        name: "Fado",
-        category: "folk_acoustic",
-        bpm: [70, 90],
-        spectral: { bass: 0.4, center: 1400 },
-        ceremonial: 0.4,
-        keywords: ["Portuguese guitar", "saudade", "melancholic"]
-    },
-    {
-        name: "Breakcore",
-        category: "electronic_experimental",
-        bpm: [160, 200],
-        spectral: { bass: 0.8, center: 5000 },
-        ceremonial: 0.0,
-        keywords: ["Amen break", "chaotic", "polyrhythmic"]
-    },
-    {
-        name: "Gregorian Chant",
-        category: "religious_ceremonial",
-        bpm: [40, 60],
-        spectral: { bass: 0.4, center: 400 },
-        ceremonial: 1.0,
-        keywords: ["Latin", "monastic", "infinite reverb"]
-    },
-    {
-        name: "Hyperpop",
-        category: "electronic_dance_modern",
-        bpm: [140, 180],
-        spectral: { bass: 0.8, center: 4000 },
-        ceremonial: 0.0,
-        keywords: ["maximalist", "pitched vocals", "glitchy"]
-    },
-    {
-        name: "Ambient",
-        category: "ambient_drone",
-        bpm: [0, 60],
-        spectral: { bass: 0.6, center: 300 },
-        ceremonial: 0.1,
-        keywords: ["spacious", "slow evolution", "atmospheric"]
-    },
-    {
-        name: "Industrial Hip Hop",
-        category: "experimental_hip_hop",
-        bpm: [140, 170],
-        spectral: { bass: 0.9, center: 2000 },
-        ceremonial: 0.0,
-        keywords: ["harsh", "aggressive", "distorted"]
-    },
-    {
-        name: "Bossa Nova",
-        category: "brazilian_jazz",
-        bpm: [80, 120],
-        spectral: { bass: 0.4, center: 1000 },
-        ceremonial: 0.0,
-        keywords: ["gentle", "nylon string guitar", "warm"]
-    },
-    {
-        name: "Techno",
-        category: "electronic_dance",
-        bpm: [120, 135],
-        spectral: { bass: 0.8, center: 1500 },
-        ceremonial: 0.0,
-        keywords: ["4/4 kick", "repetitive", "minimal"]
-    },
-    {
-        name: "Bluegrass",
-        category: "american_folk",
-        bpm: [120, 180],
-        spectral: { bass: 0.3, center: 2000 },
-        ceremonial: 0.1,
-        keywords: ["banjo", "fast picking", "organic"]
-    },
-    {
-        name: "Trap",
-        category: "hip_hop",
-        bpm: [130, 150],
-        spectral: { bass: 0.95, center: 150 },
-        ceremonial: 0.0,
-        keywords: ["808 bass", "hi-hat rolls", "triplets"]
-    },
-    {
-        name: "Tuvan Throat Singing",
-        category: "traditional_ceremonial",
-        bpm: [0, 80],
-        spectral: { bass: 0.95, center: 100 },
-        ceremonial: 0.8,
-        keywords: ["overtone", "fundamental drone", "shamanic"]
-    },
-    {
-        name: "Baroque",
-        category: "classical",
-        bpm: [80, 120],
-        spectral: { bass: 0.3, center: 1500 },
-        ceremonial: 0.4,
-        keywords: ["harpsichord", "counterpoint", "ornate"]
-    },
-    {
-        name: "Afrobeats",
-        category: "african_modern",
-        bpm: [100, 130],
-        spectral: { bass: 0.7, center: 1000 },
-        ceremonial: 0.0,
-        keywords: ["polyrhythmic", "danceable", "Lagos"]
-    },
-    {
-        name: "Doom Metal",
-        category: "metal",
-        bpm: [40, 80],
-        spectral: { bass: 0.95, center: 200 },
-        ceremonial: 0.0,
-        keywords: ["slow", "heavy", "crushing"]
-    },
-    {
-        name: "Footwork",
-        category: "electronic_dance",
-        bpm: [155, 165],
-        spectral: { bass: 0.8, center: 1500 },
-        ceremonial: 0.0,
-        keywords: ["160 BPM", "juke", "Chicago"]
-    },
-    {
-        name: "Pygmy Polyphony",
-        category: "traditional_african",
-        bpm: [90, 120],
-        spectral: { bass: 0.3, center: 800 },
-        ceremonial: 0.6,
-        keywords: ["interlocking", "yodeling", "forest"]
-    },
-    {
-        name: "Vaporwave",
-        category: "electronic_ambient",
-        bpm: [60, 100],
-        spectral: { bass: 0.5, center: 2000 },
-        ceremonial: 0.0,
-        keywords: ["nostalgic", "slowed", "aesthetic"]
+    <script>
+// ========================================
+// DATA: LOAD FROM JSON LIBRARIES
+// ========================================
+
+let MUSIC_GENRES = [];
+let LITERARY_STYLES = [];
+let LIBRARIES_LOADED = false;
+
+async function loadLibraries() {
+    try {
+        const [genresData, stylesData] = await Promise.all([
+            fetch('libraries/music-genres.json').then(r => r.json()),
+            fetch('libraries/literary-styles.json').then(r => r.json())
+        ]);
+        
+        // Flatten categories into single array
+        MUSIC_GENRES = Object.values(genresData.categories).flat();
+        LITERARY_STYLES = Object.values(stylesData.categories).flat();
+        
+        console.log(`✅ Loaded ${MUSIC_GENRES.length} music genres`);
+        console.log(`✅ Loaded ${LITERARY_STYLES.length} literary styles`);
+        
+        LIBRARIES_LOADED = true;
+        return true;
+    } catch (error) {
+        console.error('❌ Failed to load libraries:', error);
+        throw new Error('Failed to load genre libraries');
     }
-];
-
-// ========================================
-// DATA: MINI LITERARY STYLES (20 for MVP)
-// ========================================
-
-const MINI_LITERARY_STYLES = [
-    {
-        name: "Stream of Consciousness",
-        DΩ: 0.6,
-        Hᴸ: 4,
-        Φₛ: 0.3,
-        σᵦ: 0.8,
-        keywords: ["flowing", "internal", "unfiltered"]
-    },
-    {
-        name: "Cut-Up Technique",
-        DΩ: 0.8,
-        Hᴸ: 5,
-        Φₛ: 0.7,
-        σᵦ: 1.1,
-        keywords: ["fragmented", "Burroughs", "chaotic"]
-    },
-    {
-        name: "Shakespearean Sonnet",
-        DΩ: 0.1,
-        Hᴸ: 3,
-        Φₛ: 0.1,
-        σᵦ: 0.6,
-        keywords: ["14 lines", "iambic", "volta"]
-    },
-    {
-        name: "Lovecraftian Horror",
-        DΩ: 0.6,
-        Hᴸ: 4,
-        Φₛ: 0.7,
-        σᵦ: 0.5,
-        keywords: ["cosmic", "dread", "unknowable"]
-    },
-    {
-        name: "Body Horror",
-        DΩ: 0.5,
-        Hᴸ: 3,
-        Φₛ: 0.6,
-        σᵦ: 1.1,
-        keywords: ["visceral", "transformation", "flesh"]
-    },
-    {
-        name: "Internet Creepypasta",
-        DΩ: 0.5,
-        Hᴸ: 2,
-        Φₛ: 0.6,
-        σᵦ: 1.0,
-        keywords: ["digital", "sudden", "uncanny"]
-    },
-    {
-        name: "Screwball Comedy",
-        DΩ: 0.2,
-        Hᴸ: 2,
-        Φₛ: 0.2,
-        σᵦ: 1.0,
-        keywords: ["rapid", "witty", "absurd"]
-    },
-    {
-        name: "Noir Fiction",
-        DΩ: 0.3,
-        Hᴸ: 3,
-        Φₛ: 0.4,
-        σᵦ: 0.7,
-        keywords: ["cynical", "dark", "hardboiled"]
-    },
-    {
-        name: "Confessional Poetry",
-        DΩ: 0.4,
-        Hᴸ: 3,
-        Φₛ: 0.4,
-        σᵦ: 0.7,
-        keywords: ["intimate", "personal", "raw"]
-    },
-    {
-        name: "Three-Act Structure",
-        DΩ: 0.1,
-        Hᴸ: 2,
-        Φₛ: 0.1,
-        σᵦ: 0.7,
-        keywords: ["setup", "confrontation", "resolution"]
-    },
-    {
-        name: "Absurdist Fiction",
-        DΩ: 0.7,
-        Hᴸ: 4,
-        Φₛ: 0.8,
-        σᵦ: 0.9,
-        keywords: ["meaningless", "existential", "Kafka"]
-    },
-    {
-        name: "Romantic Poetry",
-        DΩ: 0.2,
-        Hᴸ: 3,
-        Φₛ: 0.2,
-        σᵦ: 0.6,
-        keywords: ["emotional", "nature", "sublime"]
-    },
-    {
-        name: "Minimalist Prose",
-        DΩ: 0.1,
-        Hᴸ: 2,
-        Φₛ: 0.1,
-        σᵦ: 0.5,
-        keywords: ["sparse", "Hemingway", "simple"]
-    },
-    {
-        name: "Baroque Prose",
-        DΩ: 0.3,
-        Hᴸ: 5,
-        Φₛ: 0.2,
-        σᵦ: 0.6,
-        keywords: ["ornate", "elaborate", "dense"]
-    },
-    {
-        name: "Beat Poetry",
-        DΩ: 0.6,
-        Hᴸ: 4,
-        Φₛ: 0.5,
-        σᵦ: 1.0,
-        keywords: ["spontaneous", "jazz-influenced", "Ginsberg"]
-    },
-    {
-        name: "Haiku",
-        DΩ: 0.1,
-        Hᴸ: 2,
-        Φₛ: 0.1,
-        σᵦ: 0.4,
-        keywords: ["5-7-5", "nature", "present moment"]
-    },
-    {
-        name: "Epic Poetry",
-        DΩ: 0.2,
-        Hᴸ: 4,
-        Φₛ: 0.2,
-        σᵦ: 0.6,
-        keywords: ["heroic", "grand", "Homeric"]
-    },
-    {
-        name: "Villanelle",
-        DΩ: 0.2,
-        Hᴸ: 3,
-        Φₛ: 0.2,
-        σᵦ: 0.7,
-        keywords: ["repetition", "refrain", "cyclical"]
-    },
-    {
-        name: "Automatic Writing",
-        DΩ: 0.7,
-        Hᴸ: 4,
-        Φₛ: 0.5,
-        σᵦ: 0.9,
-        keywords: ["unconscious", "surreal", "unedited"]
-    },
-    {
-        name: "Epistolary",
-        DΩ: 0.2,
-        Hᴸ: 2,
-        Φₛ: 0.2,
-        σᵦ: 0.6,
-        keywords: ["letters", "correspondence", "intimate"]
-    }
-];
-
-// ========================================
-// DATA: INTENT CONFIGURATIONS
-// ========================================
+}
 
 const INTENT_CONFIGS = {
     laugh: {
@@ -637,7 +280,7 @@ async function validateAndProceed(key) {
 function selectGenresForIntent(intent, vibe = null) {
     const config = INTENT_CONFIGS[intent];
     
-    let eligible = MINI_MUSIC_GENRES.filter(g => {
+    let eligible = MUSIC_GENRES.filter(g => {
         if (config.constraints.bpm_range) {
             const [min, max] = config.constraints.bpm_range;
             if (g.bpm[1] < min || g.bpm[0] > max) return false;
@@ -664,7 +307,7 @@ function selectGenresForIntent(intent, vibe = null) {
     }
     
     while (selected.length < 3) {
-        const randomGenre = MINI_MUSIC_GENRES[Math.floor(Math.random() * MINI_MUSIC_GENRES.length)];
+        const randomGenre = MUSIC_GENRES[Math.floor(Math.random() * MUSIC_GENRES.length)];
         if (!selected.includes(randomGenre)) {
             selected.push(randomGenre);
         }
@@ -674,7 +317,7 @@ function selectGenresForIntent(intent, vibe = null) {
 }
 
 function selectLiteraryStyles(count = 2) {
-    const shuffled = [...MINI_LITERARY_STYLES].sort(() => Math.random() - 0.5);
+    const shuffled = [...LITERARY_STYLES].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, count);
 }
 
@@ -900,7 +543,15 @@ ${lyrics}`;
 // EVENT LISTENERS
 // ========================================
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    // Load libraries first
+    try {
+        await loadLibraries();
+    } catch (err) {
+        showToast('Failed to load libraries: ' + err.message, 'error');
+        return;
+    }
+    
     initApp();
     
     document.getElementById('submit-api-key').addEventListener('click', async () => {
