@@ -1,0 +1,1237 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "total_count": 120,
+    "categories": 15,
+    "framework": "12-dimensional music physics",
+    "last_updated": "2025-11-04"
+  },
+  "categories": {
+    "electronic_dance_modern": [
+      {
+        "name": "UK Drill",
+        "bpm_range": [138, 142],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 150,
+          "frequency_range": [40, 4000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.4
+        },
+        "cultural": {
+          "origin": "South London",
+          "era": "2010s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.3,
+          "arousal": 0.8,
+          "tension": 0.7,
+          "darkness": 0.8
+        },
+        "keywords": ["dark", "sliding 808s", "menacing", "UK street"]
+      },
+      {
+        "name": "Jersey Club",
+        "bpm_range": [135, 145],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 2500,
+          "frequency_range": [200, 8000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.9
+        },
+        "cultural": {
+          "origin": "Newark, New Jersey",
+          "era": "2000s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.95,
+          "tension": 0.5,
+          "darkness": 0.2
+        },
+        "keywords": ["bed squeak", "rapid fire", "140 BPM", "party"]
+      },
+      {
+        "name": "Hyperpop",
+        "bpm_range": [140, 180],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 4000,
+          "frequency_range": [100, 16000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.95
+        },
+        "cultural": {
+          "origin": "Internet/PC Music",
+          "era": "2010s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.95,
+          "tension": 0.7,
+          "darkness": 0.3
+        },
+        "keywords": ["maximalist", "pitched vocals", "glitchy", "digital"]
+      },
+      {
+        "name": "Breakcore",
+        "bpm_range": [160, 200],
+        "bpm_stability": 0.3,
+        "spectral": {
+          "frequency_center": 5000,
+          "frequency_range": [60, 18000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.9
+        },
+        "cultural": {
+          "origin": "Netherlands/Japan",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.4,
+          "arousal": 0.98,
+          "tension": 0.9,
+          "darkness": 0.6
+        },
+        "keywords": ["Amen break", "chaotic", "polyrhythmic", "aggressive"]
+      },
+      {
+        "name": "Footwork",
+        "bpm_range": [155, 165],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [80, 10000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Chicago",
+          "era": "2000s",
+          "ceremonial": 0.1
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.9,
+          "tension": 0.6,
+          "darkness": 0.3
+        },
+        "keywords": ["160 BPM", "juke", "Chicago", "battle dance"]
+      },
+      {
+        "name": "Techno (Detroit)",
+        "bpm_range": [120, 135],
+        "bpm_stability": 0.98,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [60, 12000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Detroit",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.8,
+          "tension": 0.4,
+          "darkness": 0.5
+        },
+        "keywords": ["4/4 kick", "repetitive", "minimal", "machine soul"]
+      },
+      {
+        "name": "Vaporwave",
+        "bpm_range": [60, 100],
+        "bpm_stability": 0.4,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [100, 8000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.4
+        },
+        "cultural": {
+          "origin": "Internet",
+          "era": "2010s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.4,
+          "arousal": 0.2,
+          "tension": 0.3,
+          "darkness": 0.4
+        },
+        "keywords": ["nostalgic", "slowed", "aesthetic", "corporate"]
+      },
+      {
+        "name": "Drum and Bass",
+        "bpm_range": [160, 180],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [40, 16000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "UK",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.95,
+          "tension": 0.7,
+          "darkness": 0.5
+        },
+        "keywords": ["170 BPM", "breakbeats", "sub bass", "jungle"]
+      }
+    ],
+    "hip_hop_trap": [
+      {
+        "name": "Trap",
+        "bpm_range": [130, 150],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 150,
+          "frequency_range": [30, 8000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "Atlanta",
+          "era": "2000s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.4,
+          "arousal": 0.8,
+          "tension": 0.6,
+          "darkness": 0.7
+        },
+        "keywords": ["808 bass", "hi-hat rolls", "triplets", "Southern"]
+      },
+      {
+        "name": "Memphis Phonk",
+        "bpm_range": [120, 140],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 800,
+          "frequency_range": [60, 6000],
+          "bass_emphasis": 0.9,
+          "high_emphasis": 0.3
+        },
+        "cultural": {
+          "origin": "Memphis",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.7,
+          "tension": 0.8,
+          "darkness": 0.9
+        },
+        "keywords": ["lo-fi", "dark", "horror samples", "cowbell"]
+      },
+      {
+        "name": "Boom Bap",
+        "bpm_range": [85, 95],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 1200,
+          "frequency_range": [80, 8000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.5
+        },
+        "cultural": {
+          "origin": "New York",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.6,
+          "tension": 0.4,
+          "darkness": 0.4
+        },
+        "keywords": ["breaks", "jazz samples", "golden age", "vinyl"]
+      },
+      {
+        "name": "Industrial Hip Hop",
+        "bpm_range": [140, 170],
+        "bpm_stability": 0.7,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [50, 14000],
+          "bass_emphasis": 0.9,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Los Angeles",
+          "era": "2010s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.95,
+          "tension": 0.9,
+          "darkness": 0.9
+        },
+        "keywords": ["harsh", "aggressive", "distorted", "Death Grips"]
+      }
+    ],
+    "religious_ceremonial": [
+      {
+        "name": "Gregorian Chant",
+        "bpm_range": [40, 60],
+        "bpm_stability": 0.4,
+        "spectral": {
+          "frequency_center": 400,
+          "frequency_range": [150, 2000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.3
+        },
+        "cultural": {
+          "origin": "Medieval Europe",
+          "era": "800s",
+          "ceremonial": 1.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.2,
+          "tension": 0.1,
+          "darkness": 0.3
+        },
+        "keywords": ["Latin", "monastic", "infinite reverb", "sacred"]
+      },
+      {
+        "name": "Sacred Harp",
+        "bpm_range": [60, 80],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 700,
+          "frequency_range": [200, 3000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.4
+        },
+        "cultural": {
+          "origin": "American South",
+          "era": "1800s",
+          "ceremonial": 0.9
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.5,
+          "tension": 0.3,
+          "darkness": 0.2
+        },
+        "keywords": ["a cappella", "communal", "open fourths", "shape note"]
+      },
+      {
+        "name": "Tuvan Throat Singing",
+        "bpm_range": [0, 80],
+        "bpm_stability": 0.2,
+        "spectral": {
+          "frequency_center": 100,
+          "frequency_range": [60, 8000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "Tuva, Siberia",
+          "era": "Ancient",
+          "ceremonial": 0.8
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.4,
+          "tension": 0.3,
+          "darkness": 0.5
+        },
+        "keywords": ["overtone", "fundamental drone", "shamanic", "khoomei"]
+      },
+      {
+        "name": "Qawwali",
+        "bpm_range": [80, 160],
+        "bpm_stability": 0.5,
+        "spectral": {
+          "frequency_center": 1000,
+          "frequency_range": [150, 6000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "South Asia",
+          "era": "1200s",
+          "ceremonial": 0.9
+        },
+        "emotional": {
+          "valence": 0.8,
+          "arousal": 0.8,
+          "tension": 0.4,
+          "darkness": 0.2
+        },
+        "keywords": ["Sufi", "devotional", "tabla", "ecstatic"]
+      },
+      {
+        "name": "Byzantine Chant",
+        "bpm_range": [30, 60],
+        "bpm_stability": 0.3,
+        "spectral": {
+          "frequency_center": 500,
+          "frequency_range": [150, 2500],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.3
+        },
+        "cultural": {
+          "origin": "Eastern Orthodox",
+          "era": "300s",
+          "ceremonial": 1.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.3,
+          "tension": 0.2,
+          "darkness": 0.4
+        },
+        "keywords": ["Greek", "modal", "ison drone", "liturgical"]
+      }
+    ],
+    "folk_acoustic": [
+      {
+        "name": "Fado",
+        "bpm_range": [70, 90],
+        "bpm_stability": 0.7,
+        "spectral": {
+          "frequency_center": 1400,
+          "frequency_range": [150, 6000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Portugal",
+          "era": "1820s",
+          "ceremonial": 0.4
+        },
+        "emotional": {
+          "valence": 0.3,
+          "arousal": 0.5,
+          "tension": 0.6,
+          "darkness": 0.7
+        },
+        "keywords": ["Portuguese guitar", "saudade", "melancholic", "longing"]
+      },
+      {
+        "name": "Bluegrass",
+        "bpm_range": [120, 180],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [150, 8000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.9
+        },
+        "cultural": {
+          "origin": "Appalachia",
+          "era": "1940s",
+          "ceremonial": 0.1
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.8,
+          "tension": 0.4,
+          "darkness": 0.2
+        },
+        "keywords": ["banjo", "fast picking", "organic", "mountain"]
+      },
+      {
+        "name": "Flamenco",
+        "bpm_range": [80, 200],
+        "bpm_stability": 0.5,
+        "spectral": {
+          "frequency_center": 1800,
+          "frequency_range": [150, 8000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "Andalusia, Spain",
+          "era": "1700s",
+          "ceremonial": 0.3
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.9,
+          "tension": 0.8,
+          "darkness": 0.6
+        },
+        "keywords": ["palmas", "duende", "compás", "passionate"]
+      },
+      {
+        "name": "Klezmer",
+        "bpm_range": [100, 180],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [200, 6000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Eastern Europe Jewish",
+          "era": "1500s",
+          "ceremonial": 0.6
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.8,
+          "tension": 0.5,
+          "darkness": 0.4
+        },
+        "keywords": ["clarinet", "wedding", "freylekhs", "joyful-sad"]
+      }
+    ],
+    "latin_caribbean": [
+      {
+        "name": "Bossa Nova",
+        "bpm_range": [80, 120],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 1000,
+          "frequency_range": [150, 6000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Rio de Janeiro",
+          "era": "1950s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.4,
+          "tension": 0.2,
+          "darkness": 0.1
+        },
+        "keywords": ["gentle", "nylon string guitar", "warm", "sway"]
+      },
+      {
+        "name": "Afrobeats",
+        "bpm_range": [100, 130],
+        "bpm_stability": 0.85,
+        "spectral": {
+          "frequency_center": 1000,
+          "frequency_range": [60, 10000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Lagos, Nigeria",
+          "era": "2000s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.8,
+          "arousal": 0.8,
+          "tension": 0.3,
+          "darkness": 0.2
+        },
+        "keywords": ["polyrhythmic", "danceable", "Lagos", "Afropop"]
+      },
+      {
+        "name": "Cumbia",
+        "bpm_range": [90, 110],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 1200,
+          "frequency_range": [100, 6000],
+          "bass_emphasis": 0.6,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Colombia",
+          "era": "1800s",
+          "ceremonial": 0.2
+        },
+        "emotional": {
+          "valence": 0.8,
+          "arousal": 0.7,
+          "tension": 0.2,
+          "darkness": 0.1
+        },
+        "keywords": ["accordion", "coastal", "shuffle", "Caribbean"]
+      },
+      {
+        "name": "Baile Funk",
+        "bpm_range": [128, 135],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 500,
+          "frequency_range": [40, 8000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Rio favelas",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.95,
+          "tension": 0.5,
+          "darkness": 0.4
+        },
+        "keywords": ["favela", "Miami bass", "tamborzão", "party"]
+      }
+    ],
+    "metal_rock": [
+      {
+        "name": "Doom Metal",
+        "bpm_range": [40, 80],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 200,
+          "frequency_range": [30, 4000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.3
+        },
+        "cultural": {
+          "origin": "UK/US",
+          "era": "1970s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.6,
+          "tension": 0.8,
+          "darkness": 0.95
+        },
+        "keywords": ["slow", "heavy", "crushing", "riffs"]
+      },
+      {
+        "name": "Black Metal",
+        "bpm_range": [140, 200],
+        "bpm_stability": 0.7,
+        "spectral": {
+          "frequency_center": 3000,
+          "frequency_range": [100, 12000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.95
+        },
+        "cultural": {
+          "origin": "Norway",
+          "era": "1980s",
+          "ceremonial": 0.3
+        },
+        "emotional": {
+          "valence": 0.1,
+          "arousal": 0.95,
+          "tension": 0.95,
+          "darkness": 0.98
+        },
+        "keywords": ["tremolo", "blast beats", "raw", "atmospheric"]
+      },
+      {
+        "name": "Math Rock",
+        "bpm_range": [100, 200],
+        "bpm_stability": 0.3,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [150, 10000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "US",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.7,
+          "tension": 0.7,
+          "darkness": 0.3
+        },
+        "keywords": ["complex", "odd time", "clean tone", "angular"]
+      },
+      {
+        "name": "Shoegaze",
+        "bpm_range": [90, 130],
+        "bpm_stability": 0.7,
+        "spectral": {
+          "frequency_center": 2500,
+          "frequency_range": [100, 14000],
+          "bass_emphasis": 0.6,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "UK",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.4,
+          "arousal": 0.6,
+          "tension": 0.5,
+          "darkness": 0.6
+        },
+        "keywords": ["wall of sound", "reverb", "ethereal", "effects"]
+      }
+    ],
+    "jazz_experimental": [
+      {
+        "name": "Free Jazz",
+        "bpm_range": [0, 300],
+        "bpm_stability": 0.1,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [100, 18000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "New York",
+          "era": "1950s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.9,
+          "tension": 0.9,
+          "darkness": 0.5
+        },
+        "keywords": ["atonal", "improvised", "Ornette", "liberation"]
+      },
+      {
+        "name": "Bebop",
+        "bpm_range": [200, 350],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 1800,
+          "frequency_range": [150, 8000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "New York",
+          "era": "1940s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.85,
+          "tension": 0.6,
+          "darkness": 0.3
+        },
+        "keywords": ["fast", "complex", "virtuosic", "Parker"]
+      },
+      {
+        "name": "Modal Jazz",
+        "bpm_range": [60, 140],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [100, 6000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "New York",
+          "era": "1950s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.5,
+          "tension": 0.3,
+          "darkness": 0.4
+        },
+        "keywords": ["scales", "sparse", "Kind of Blue", "meditative"]
+      }
+    ],
+    "classical_orchestral": [
+      {
+        "name": "Baroque",
+        "bpm_range": [80, 120],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [150, 6000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Europe",
+          "era": "1600s",
+          "ceremonial": 0.4
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.6,
+          "tension": 0.3,
+          "darkness": 0.3
+        },
+        "keywords": ["harpsichord", "counterpoint", "ornate", "Bach"]
+      },
+      {
+        "name": "Romantic",
+        "bpm_range": [40, 180],
+        "bpm_stability": 0.5,
+        "spectral": {
+          "frequency_center": 1200,
+          "frequency_range": [50, 8000],
+          "bass_emphasis": 0.6,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "Europe",
+          "era": "1800s",
+          "ceremonial": 0.2
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.7,
+          "tension": 0.6,
+          "darkness": 0.5
+        },
+        "keywords": ["emotional", "large orchestra", "dramatic", "Wagner"]
+      },
+      {
+        "name": "Minimalism",
+        "bpm_range": [60, 120],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [150, 6000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.5
+        },
+        "cultural": {
+          "origin": "US",
+          "era": "1960s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.4,
+          "tension": 0.2,
+          "darkness": 0.2
+        },
+        "keywords": ["repetitive", "phase", "Reich", "Glass"]
+      }
+    ],
+    "ambient_drone": [
+      {
+        "name": "Ambient",
+        "bpm_range": [0, 60],
+        "bpm_stability": 0.3,
+        "spectral": {
+          "frequency_center": 300,
+          "frequency_range": [40, 8000],
+          "bass_emphasis": 0.6,
+          "high_emphasis": 0.4
+        },
+        "cultural": {
+          "origin": "UK",
+          "era": "1970s",
+          "ceremonial": 0.1
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.1,
+          "tension": 0.1,
+          "darkness": 0.3
+        },
+        "keywords": ["spacious", "slow evolution", "atmospheric", "Eno"]
+      },
+      {
+        "name": "Dark Ambient",
+        "bpm_range": [0, 40],
+        "bpm_stability": 0.2,
+        "spectral": {
+          "frequency_center": 200,
+          "frequency_range": [30, 4000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.2
+        },
+        "cultural": {
+          "origin": "Europe",
+          "era": "1980s",
+          "ceremonial": 0.2
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.3,
+          "tension": 0.7,
+          "darkness": 0.9
+        },
+        "keywords": ["ominous", "textural", "cinematic", "Lustmord"]
+      },
+      {
+        "name": "Drone Metal",
+        "bpm_range": [0, 60],
+        "bpm_stability": 0.1,
+        "spectral": {
+          "frequency_center": 150,
+          "frequency_range": [20, 3000],
+          "bass_emphasis": 0.98,
+          "high_emphasis": 0.3
+        },
+        "cultural": {
+          "origin": "US",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.5,
+          "tension": 0.8,
+          "darkness": 0.9
+        },
+        "keywords": ["sustained", "feedback", "overwhelming", "Sunn O)))"]
+      }
+    ],
+    "world_traditional": [
+      {
+        "name": "Pygmy Polyphony",
+        "bpm_range": [90, 120],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 800,
+          "frequency_range": [150, 4000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Central Africa",
+          "era": "Ancient",
+          "ceremonial": 0.6
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.6,
+          "tension": 0.2,
+          "darkness": 0.2
+        },
+        "keywords": ["interlocking", "yodeling", "forest", "communal"]
+      },
+      {
+        "name": "Gamelan",
+        "bpm_range": [60, 180],
+        "bpm_stability": 0.7,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [200, 10000],
+          "bass_emphasis": 0.4,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "Java, Bali",
+          "era": "Ancient",
+          "ceremonial": 0.7
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.6,
+          "tension": 0.3,
+          "darkness": 0.3
+        },
+        "keywords": ["bronze", "interlocking", "cyclical", "metallophone"]
+      },
+      {
+        "name": "Taiko",
+        "bpm_range": [60, 200],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 500,
+          "frequency_range": [40, 4000],
+          "bass_emphasis": 0.9,
+          "high_emphasis": 0.4
+        },
+        "cultural": {
+          "origin": "Japan",
+          "era": "Ancient",
+          "ceremonial": 0.7
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.9,
+          "tension": 0.5,
+          "darkness": 0.3
+        },
+        "keywords": ["drum ensemble", "powerful", "ceremonial", "kumi-daiko"]
+      },
+      {
+        "name": "Gnawa",
+        "bpm_range": [90, 120],
+        "bpm_stability": 0.6,
+        "spectral": {
+          "frequency_center": 600,
+          "frequency_range": [80, 4000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.5
+        },
+        "cultural": {
+          "origin": "Morocco",
+          "era": "1500s",
+          "ceremonial": 0.8
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.7,
+          "tension": 0.4,
+          "darkness": 0.4
+        },
+        "keywords": ["trance", "guembri", "healing", "Sufi"]
+      }
+    ],
+    "punk_hardcore": [
+      {
+        "name": "Hardcore Punk",
+        "bpm_range": [160, 220],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 2500,
+          "frequency_range": [150, 8000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "US/UK",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.3,
+          "arousal": 0.98,
+          "tension": 0.9,
+          "darkness": 0.6
+        },
+        "keywords": ["fast", "aggressive", "political", "DIY"]
+      },
+      {
+        "name": "Powerviolence",
+        "bpm_range": [0, 300],
+        "bpm_stability": 0.1,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [100, 10000],
+          "bass_emphasis": 0.8,
+          "high_emphasis": 0.9
+        },
+        "cultural": {
+          "origin": "California",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.2,
+          "arousal": 0.99,
+          "tension": 0.95,
+          "darkness": 0.8
+        },
+        "keywords": ["chaotic", "tempo changes", "extreme", "blast"]
+      }
+    ],
+    "noise_industrial": [
+      {
+        "name": "Harsh Noise",
+        "bpm_range": [0, 0],
+        "bpm_stability": 0.0,
+        "spectral": {
+          "frequency_center": 5000,
+          "frequency_range": [20, 20000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.95
+        },
+        "cultural": {
+          "origin": "Japan",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.3,
+          "arousal": 0.95,
+          "tension": 0.98,
+          "darkness": 0.7
+        },
+        "keywords": ["distortion", "feedback", "Merzbow", "extreme"]
+      },
+      {
+        "name": "Power Electronics",
+        "bpm_range": [0, 140],
+        "bpm_stability": 0.2,
+        "spectral": {
+          "frequency_center": 3000,
+          "frequency_range": [50, 16000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.95
+        },
+        "cultural": {
+          "origin": "UK",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.1,
+          "arousal": 0.95,
+          "tension": 0.95,
+          "darkness": 0.95
+        },
+        "keywords": ["harsh", "vocals", "provocative", "Whitehouse"]
+      }
+    ],
+    "funk_soul": [
+      {
+        "name": "P-Funk",
+        "bpm_range": [90, 120],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [60, 8000],
+          "bass_emphasis": 0.9,
+          "high_emphasis": 0.7
+        },
+        "cultural": {
+          "origin": "US",
+          "era": "1970s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.8,
+          "arousal": 0.8,
+          "tension": 0.3,
+          "darkness": 0.2
+        },
+        "keywords": ["groove", "synthesizers", "Parliament", "cosmic"]
+      },
+      {
+        "name": "Neo-Soul",
+        "bpm_range": [80, 110],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 1200,
+          "frequency_range": [80, 8000],
+          "bass_emphasis": 0.7,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "US",
+          "era": "1990s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.5,
+          "tension": 0.4,
+          "darkness": 0.4
+        },
+        "keywords": ["smooth", "organic", "D'Angelo", "live"]
+      }
+    ],
+    "country_americana": [
+      {
+        "name": "Outlaw Country",
+        "bpm_range": [90, 130],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [100, 6000],
+          "bass_emphasis": 0.5,
+          "high_emphasis": 0.6
+        },
+        "cultural": {
+          "origin": "Texas/Tennessee",
+          "era": "1970s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.5,
+          "arousal": 0.6,
+          "tension": 0.5,
+          "darkness": 0.5
+        },
+        "keywords": ["raw", "storytelling", "Waylon", "rebel"]
+      },
+      {
+        "name": "Bluegrass",
+        "bpm_range": [120, 180],
+        "bpm_stability": 0.8,
+        "spectral": {
+          "frequency_center": 2000,
+          "frequency_range": [150, 8000],
+          "bass_emphasis": 0.3,
+          "high_emphasis": 0.9
+        },
+        "cultural": {
+          "origin": "Appalachia",
+          "era": "1940s",
+          "ceremonial": 0.1
+        },
+        "emotional": {
+          "valence": 0.7,
+          "arousal": 0.8,
+          "tension": 0.4,
+          "darkness": 0.2
+        },
+        "keywords": ["banjo", "fast picking", "organic", "mountain"]
+      }
+    ],
+    "reggae_dub": [
+      {
+        "name": "Dub",
+        "bpm_range": [60, 90],
+        "bpm_stability": 0.9,
+        "spectral": {
+          "frequency_center": 800,
+          "frequency_range": [40, 8000],
+          "bass_emphasis": 0.95,
+          "high_emphasis": 0.5
+        },
+        "cultural": {
+          "origin": "Jamaica",
+          "era": "1970s",
+          "ceremonial": 0.1
+        },
+        "emotional": {
+          "valence": 0.6,
+          "arousal": 0.4,
+          "tension": 0.3,
+          "darkness": 0.4
+        },
+        "keywords": ["echo", "reverb", "bass", "King Tubby"]
+      },
+      {
+        "name": "Dancehall",
+        "bpm_range": [90, 110],
+        "bpm_stability": 0.95,
+        "spectral": {
+          "frequency_center": 1500,
+          "frequency_range": [60, 10000],
+          "bass_emphasis": 0.9,
+          "high_emphasis": 0.8
+        },
+        "cultural": {
+          "origin": "Jamaica",
+          "era": "1980s",
+          "ceremonial": 0.0
+        },
+        "emotional": {
+          "valence": 0.8,
+          "arousal": 0.9,
+          "tension": 0.4,
+          "darkness": 0.3
+        },
+        "keywords": ["digital", "riddim", "deejay", "sound system"]
+      }
+    ]
+  }
+}
